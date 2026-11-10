@@ -412,7 +412,7 @@ Inside the document, `data-nosnippet` excludes a single element from the snippet
 <p>Visible to everyone. <span data-nosnippet>Not quoted in results.</span></p>
 ```
 
-**There is no `<head>` tag that governs AI training or AI answers.** Those controls live in `robots.txt`, through per-agent user-agent tokens such as `Google-Extended`, `GPTBot`, `ClaudeBot`, `PerplexityBot` and `CCBot`, and through the Content Signals proposal. Note that `Google-Extended` covers Gemini and Vertex AI grounding — it has no effect on Google Search, nor on AI Overviews, which are governed by Googlebot and by the snippet directives above.
+**There is no `<head>` tag that governs AI training or AI answers.** Those controls live in `robots.txt`, through per-agent user-agent tokens such as `Google-Extended`, `GPTBot`, `PerplexityBot` and `CCBot`, and through the Content Signals proposal. Note that `Google-Extended` covers Gemini and Vertex AI grounding — it has no effect on Google Search, nor on AI Overviews, which are governed by Googlebot and by the snippet directives above.
 
 - 📖 [Meta tags and attributes that Google supports](https://developers.google.com/search/docs/crawling-indexing/special-tags)
 - 📖 [Google-Extended](https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers#google-extended)

@@ -412,7 +412,7 @@ Dentro del documento, `data-nosnippet` excluye un elemento concreto del fragment
 <p>Visible para todos. <span data-nosnippet>Nunca se cita en los resultados.</span></p>
 ```
 
-**Ninguna etiqueta del `<head>` gobierna el entrenamiento de modelos ni las respuestas de las IA.** Esos controles están en el `robots.txt`, mediante tokens de agente como `Google-Extended`, `GPTBot`, `ClaudeBot`, `PerplexityBot` y `CCBot`, y mediante la propuesta Content Signals. Conviene recordar que `Google-Extended` afecta a Gemini y al anclaje de Vertex AI: no tiene ningún efecto sobre Google Search, ni sobre las AI Overviews, que dependen de Googlebot y de las directivas de fragmento anteriores.
+**Ninguna etiqueta del `<head>` gobierna el entrenamiento de modelos ni las respuestas de las IA.** Esos controles están en el `robots.txt`, mediante tokens de agente como `Google-Extended`, `GPTBot`, `PerplexityBot` y `CCBot`, y mediante la propuesta Content Signals. Conviene recordar que `Google-Extended` afecta a Gemini y al anclaje de Vertex AI: no tiene ningún efecto sobre Google Search, ni sobre las AI Overviews, que dependen de Googlebot y de las directivas de fragmento anteriores.
 
 - 📖 [Etiquetas y atributos que Google admite](https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=es)
 - 📖 [Google-Extended](https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=es#google-extended)

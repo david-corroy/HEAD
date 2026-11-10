@@ -412,7 +412,7 @@ Dans le corps du document, `data-nosnippet` exclut un élément précis de l'ext
 <p>Visible par tout le monde. <span data-nosnippet>Jamais repris dans les résultats.</span></p>
 ```
 
-**Aucune balise du `<head>` ne gouverne l'entraînement des modèles ni les réponses des IA.** Ces contrôles se trouvent dans le `robots.txt`, par des jetons d'agent comme `Google-Extended`, `GPTBot`, `ClaudeBot`, `PerplexityBot` et `CCBot`, ainsi que par la proposition Content Signals. À noter : `Google-Extended` concerne Gemini et l'ancrage de Vertex AI — il n'a aucun effet sur Google Search, ni sur les AI Overviews, qui dépendent de Googlebot et des directives d'extrait ci-dessus.
+**Aucune balise du `<head>` ne gouverne l'entraînement des modèles ni les réponses des IA.** Ces contrôles se trouvent dans le `robots.txt`, par des jetons d'agent comme `Google-Extended`, `GPTBot`, `PerplexityBot` et `CCBot`, ainsi que par la proposition Content Signals. À noter : `Google-Extended` concerne Gemini et l'ancrage de Vertex AI — il n'a aucun effet sur Google Search, ni sur les AI Overviews, qui dépendent de Googlebot et des directives d'extrait ci-dessus.
 
 - 📖 [Balises et attributs compris par Google](https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=fr)
 - 📖 [Google-Extended](https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=fr#google-extended)
