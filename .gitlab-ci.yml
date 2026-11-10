@@ -1,0 +1,23 @@
+# Même contrôle que sur GitHub, pour que le miroir GitLab ne devienne pas
+# une copie périmée. Le passage hebdomadaire se règle dans
+# Build → Pipeline schedules (GitLab ne gère pas le cron dans ce fichier).
+
+default:
+  image: python:3-slim
+
+stages: [check]
+
+sync:
+  stage: check
+  script: [python3 scripts/check.py --sync]
+  rules:
+    - changes: [README*.md, DEPRECATED.md, scripts/check.py, head.html]
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+
+links:
+  stage: check
+  script:
+    - python3 scripts/check.py --links || (sleep 60 && python3 scripts/check.py --links)
+  rules:
+    - changes: [README*.md, DEPRECATED.md, scripts/check.py, head.html]
+    - if: $CI_PIPELINE_SOURCE == "schedule"

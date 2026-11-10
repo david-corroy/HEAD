@@ -7,6 +7,8 @@
 
 **Léelo en otro idioma:** [English](./README.md) · [Français](./README.fr.md)
 
+**¿Con prisa?** [`head.html`](./head.html) es un `<head>` completo y comentado, en el orden recomendado, listo para copiar.
+
 Mantenido por [David Corroy](https://david-corroy.com), consultor SEO. Cada etiqueta se comprueba contra su especificación vigente antes de documentarse, y todo lo que ha quedado sustituido pasa a [DEPRECATED.md](./DEPRECATED.md) indicando su reemplazo.
 
 ## Tabla de contenidos
@@ -348,7 +350,7 @@ Este es el orden aconsejado de los elementos del `<head>`, para obtener el mejor
 ```
 
 - 📖 [async frente a defer](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
-- 📖 [Integridad de subrecursos (MDN)](https://developer.mozilla.org/es/docs/Web/Security/Subresource_Integrity)
+- 📖 [Integridad de subrecursos (MDN)](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity)
 
 ## Reglas de especulación
 
@@ -388,7 +390,7 @@ Dos cosas que conviene saber antes de llevar esto a producción:
 - **Una página prerrenderizada ejecuta su JavaScript.** La analítica, las llamadas publicitarias y las pruebas A/B pueden dispararse para una visita que nunca llegará a producirse. Condiciónelas a `document.prerendering` y al evento `prerenderingchange`.
 - **Excluya todo lo que tenga efectos secundarios:** cerrar sesión, añadir al carrito, acciones de un solo clic. Para eso están las reglas `where` de arriba.
 
-- 📖 [API Speculation Rules (MDN)](https://developer.mozilla.org/es/docs/Web/API/Speculation_Rules_API)
+- 📖 [API Speculation Rules (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Speculation_Rules_API)
 - 📖 [Prerrenderizado de páginas en Chrome](https://developer.chrome.com/docs/web-platform/prerender-pages)
 
 ## Fragmentos de búsqueda y respuestas de IA

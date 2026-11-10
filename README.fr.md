@@ -7,6 +7,8 @@
 
 **Lire dans une autre langue :** [English](./README.md) · [Español](./README.es.md)
 
+**Pressé ?** [`head.html`](./head.html) est un `<head>` complet et commenté, dans l'ordre recommandé, prêt à copier.
+
 Maintenu par [David Corroy](https://david-corroy.com), consultant SEO. Chaque balise est vérifiée dans sa spécification à jour avant d'être documentée, et tout ce qui a été remplacé part dans [DEPRECATED.md](./DEPRECATED.md) avec le nom de son remplaçant.
 
 ## Table des matières
@@ -348,7 +350,7 @@ Voici l'ordre conseillé des éléments du `<head>`, pour de meilleures performa
 ```
 
 - 📖 [async contre defer](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
-- 📖 [Intégrité des sous-ressources (MDN)](https://developer.mozilla.org/fr/docs/Web/Security/Subresource_Integrity)
+- 📖 [Intégrité des sous-ressources (MDN)](https://developer.mozilla.org/fr/docs/Web/Security/Defenses/Subresource_Integrity)
 
 ## Règles de spéculation
 

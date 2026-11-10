@@ -38,7 +38,7 @@ Use the CSS at-rule instead:
 
 ## Microsoft Internet Explorer
 
-Internet Explorer was [retired by Microsoft on June 15, 2022](https://learn.microsoft.com/en-us/lifecycle/announcements/internet-explorer-11-end-of-support-on-windows-10). All IE-specific tags are obsolete.
+Internet Explorer was [retired by Microsoft on June 15, 2022](https://learn.microsoft.com/en-us/lifecycle/announcements/internet-explorer-11-end-of-support). All IE-specific tags are obsolete.
 
 ```html
 <!-- Force IE 8/9/10 to use its latest rendering engine -->
@@ -124,7 +124,7 @@ Google [removed the AMP requirement from Top Stories](https://developers.google.
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 ```
 
-[RSD (Really Simple Discoverability)](https://en.wikipedia.org/wiki/Really_Simple_Discovery) was used by XML-RPC blog editors like Windows Live Writer (discontinued in 2017). XML-RPC pingbacks have been [widely disabled by default](https://make.wordpress.org/core/2015/09/30/xml-rpc-settings-in-4-4/) due to their use in DDoS amplification attacks. Use [Webmention](https://www.w3.org/TR/webmention/) instead.
+[RSD (Really Simple Discoverability)](https://en.wikipedia.org/wiki/Really_Simple_Discovery) was used by XML-RPC blog editors like Windows Live Writer (discontinued in 2017). XML-RPC pingbacks have been [widely disabled by default](https://developer.wordpress.org/apis/xml-rpc/) due to their use in DDoS amplification attacks. Use [Webmention](https://www.w3.org/TR/webmention/) instead.
 
 ```html
 <!-- Links to a document that describes a collection of records, documents, or other materials of historical interest -->
@@ -142,7 +142,7 @@ Both `archives` and `index` were [removed from the HTML living standard](https:/
 <meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
 ```
 
-[Alexa Internet](https://en.wikipedia.org/wiki/Alexa_Internet) (the web traffic analytics service — unrelated to the Amazon Alexa voice assistant) was [shut down by Amazon on May 1, 2022](https://support.alexa.com/hc/en-us/articles/4410503838999).
+[Alexa Internet](https://en.wikipedia.org/wiki/Alexa_Internet) (the web traffic analytics service — unrelated to the Amazon Alexa voice assistant) was [shut down by Amazon on May 1, 2022](https://web.archive.org/web/2022/https://support.alexa.com/hc/en-us/articles/4410503838999).
 
 ## Social
 

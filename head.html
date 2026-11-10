@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- ==========================================================================
+       A recommended <head>, ready to copy.
+       Order matters: see the "Recommended Order" section of the guide.
+       Replace every example value. Delete what you don't need — an empty
+       meta tag is worse than no tag at all.
+       https://github.com/david-corroy/HEAD
+       ========================================================================== -->
+
+  <!-- Must appear within the first 1024 bytes of the document -->
+  <meta charset="utf-8">
+
+  <!-- Declare early, or the first paint may be laid out at the wrong width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- After encoding and viewport, to avoid a re-render -->
+  <title>Page title — 60 characters or so</title>
+
+  <!-- May be reproduced in search results; around 150 characters -->
+  <meta name="description" content="What this page is about, written for a human.">
+
+  <!-- One canonical per page, absolute URL, pointing at itself -->
+  <link rel="canonical" href="https://example.com/page">
+
+  <!-- Snippet limits. max-image-preview:large is required for Google Discover -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Both color schemes, so the browser never paints the wrong chrome -->
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: dark)">
+
+  <!-- Social preview. og:image at 1200×630 or larger; an absolute URL, always -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/page">
+  <meta property="og:title" content="Page title">
+  <meta property="og:description" content="What this page is about.">
+  <meta property="og:image" content="https://example.com/preview.jpg">
+  <meta property="og:image:alt" content="What the image shows, not a caption.">
+  <meta property="og:site_name" content="Site name">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Other language versions. Each one must point back to all the others -->
+  <link rel="alternate" href="https://example.com/fr/page" hreflang="fr">
+  <link rel="alternate" href="https://example.com/page" hreflang="x-default">
+
+  <!-- Resource hints, before the stylesheets that depend on them -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets come before scripts -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons. A manifest covers the rest: name, display mode, full icon set -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <!-- Feed, if you publish one. Browsers and readers discover it here -->
+  <link rel="alternate" type="application/rss+xml" title="Site name" href="/feed.xml">
+
+  <!-- Scripts last, and never blocking -->
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <!-- … -->
+</body>
+</html>

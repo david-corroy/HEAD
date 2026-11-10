@@ -7,6 +7,8 @@
 
 **Read this in other languages:** [Français](./README.fr.md) · [Español](./README.es.md)
 
+**In a hurry?** [`head.html`](./head.html) is a complete, commented `<head>` in the recommended order, ready to copy.
+
 Maintained by [David Corroy](https://david-corroy.com), SEO consultant — every tag here is checked against its current specification before it is documented, and anything superseded is moved to [DEPRECATED.md](./DEPRECATED.md) with its replacement named.
 
 ## Table of Contents

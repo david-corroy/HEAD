@@ -1,0 +1,31 @@
+name: Health check
+
+# Un guide de référence meurt de ses liens pourris, pas de ses fautes de frappe.
+# Ce contrôle tourne chaque lundi pour que la promesse « maintenu » reste vérifiable.
+
+on:
+  push:
+    branches: [main]
+    paths: ['README*.md', 'DEPRECATED.md', 'scripts/check.py', 'head.html']
+  pull_request:
+    paths: ['README*.md', 'DEPRECATED.md', 'scripts/check.py', 'head.html']
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    name: Language versions stay in sync
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/check.py --sync
+
+  links:
+    name: External links still resolve
+    runs-on: ubuntu-latest
+    # Un lien peut tomber le temps d'une maintenance côté hôte ; une seule reprise suffit
+    # à écarter l'incident passager sans masquer une vraie disparition.
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/check.py --links || (sleep 60 && python3 scripts/check.py --links)
